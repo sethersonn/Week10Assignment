@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibraryBookCheckout</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body class="container">
+    <br>
+    <div class="card text-center">
+        <div class="card-header text-success font-weight-bold text-uppercase">
+            Library Book Checkout
+        </div>
+        <div>
+            <figure class="figure">
+                <img src="LibraryImage.jpg" class="figure-img img-fluid rounded" alt="Library Picture">
+                <figcaption class="figure-caption text-end">Checkout Some Books!</figcaption>
+            </figure>
+        </div>
+        <div class="card-body">
+            <h3 class="card-title text-success">Sign Up For A Library Card:</h3>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" class="form-control" id="first-name">
+                    </div>
+
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" class="form-control" id="last-name">
+                    </div>
+                </div>
+                <div>
+                    <button id="add" class="btn btn-success form-control">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <body class="container">
+
+        <br>
+
+        <div class="card text-center">
+            <div class="card-header text-danger font-weight-bold text-uppercase">
+                Checkout New Book
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label form="new-Title text-warning">Title:</label>
+                                <input type="text" class="form-control" id="new-title">
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label form="new-author-name text-warning">Author:</label>
+                                <input type="text" class="form-control" id="new-author-name">
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label form="new-genre-name text-warning">Genre:</label>
+                                <input type="text" class="form-control" id="new-genre-name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label form="new-checkout-date">Checkout Date</label>
+                                <input type="date" class="form-control" id="new-checkout-date">
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label form="new-due-date">Due Date</label>
+                                <input type="date" class="form-control" id="new-due-date">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="checkout" class="btn btn-danger form-control">Checkout</button>
+                        <div><br>
+                            <table id="list" class="table table-success table-striped">
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Author</th>
+                                    <th>Genre</th>
+                                    <th>Checkout Date</th>
+                                    <th>Due Date</th>
+                                    <th>Book Holder</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+
+
+
+
+
+
+        <script src="index.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+
+    </body>
+
+</html>
